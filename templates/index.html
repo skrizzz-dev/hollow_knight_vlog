@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}Hollow Knight - Главная{% endblock %}
+
+{% block content %}
+    <div>
+        <h2><a href="{{ url_for('post5') }}">Пантеон Халоунеста — самый сложный Пантеон, который выдерживают очень мало процентов игроков</a></h2>
+        <p>Что делает Пантеон Халоунеста более сложным по сравнению с Пантеоном Рыцаря?</p>
+        <figure>
+            <img src="{{ url_for('static', filename='image/pantheon_5.jpg') }}" alt="Пантеон Халоунеста" width="200">
+        </figure>
+    </div>
+
+    <div>
+        <h2><a href="{{ url_for('post4') }}">Пантеон Рыцаря — очень сложный Пантеон который выбивает даже сильных игроков</a></h2>
+        <p>Почему Пантеон Рыцаря считается таким сложным?</p>
+        <figure>
+            <img src="{{ url_for('static', filename='image/pantheon_4.jpg') }}" alt="Пантеон Рыцаря" width="200">
+        </figure>
+    </div>
+
+    <div>
+        <h2><a href="{{ url_for('post3') }}">Пантеон Гуру — третий сложный пантеон, который является барьером между легким и сложными пантеонами</a></h2>
+        <p>Почему Пантеон Гуру является барьером сложности?</p>
+        <figure>
+            <img src="{{ url_for('static', filename='image/guru.jpg') }}" alt="Пантеон Гуру" width="200">
+        </figure>
+    </div>
+    
+    <div>
+        <h2><a href="{{ url_for('post2') }}">Пантеон Художника — второй пантеон, требующий от игрока к адаптации новым паттернам игры</a></h2>
+        <p>Почему Пантеон Мастера даст игрока понимание новых сложностей игры?</p>
+        <figure>
+            <img src="{{ url_for('static', filename='image/pantheon_artist.jpg') }}" alt="Пантеон Художника" width="200">
+        </figure>
+    </div>
+
+    <div>
+        <h2><a href="{{ url_for('post1') }}">Пантеон Мастера — первый пантеон, самый легкий которые все равно требует от игрока концентрации</a></h2>
+        <p>Почему Пантеон Художника требует от игрока осторожности?</p>
+        <figure>
+            <img src="{{ url_for('static', filename='image/pantheon_master.jpg') }}" alt="Пантеон Мастера" width="200">
+        </figure>
+    </div>
+
+{% endblock %}
