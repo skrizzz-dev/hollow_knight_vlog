@@ -3,7 +3,6 @@
 {% block title %}Hollow Knight - Главная{% endblock %}
 
 {% block content %}
-
     <h1>Пантеон Художника — анализ сложности</h1>
 
     <figure>
@@ -24,7 +23,43 @@
         <li>Требование к концентрации и подготовке к необычным боссам.</li>
     </ol>
 
-    <p>
+    <h2 style="margin-top: 40px;">Самые сложные боссы Пантеона</h2>
+    
+    <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%; margin-top: 15px;">
+        <thead>
+            <tr style="background-color: #333; color: #fff;">
+                <th style="text-align: left; padding: 10px;">Босс</th>
+                <th style="text-align: left; padding: 10px;">Имя босса</th>
+                <th style="text-align: left; padding: 10px;">Сложность (из 10)</th>
+                <th style="text-align: left; padding: 10px;">Ключевая механика</th>
+                <th style="text-align: left; padding: 10px;">Совет</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px;"><img src="{{ url_for('static', filename="image/sheo.png") }}" height="50" style="margin-right: 10px; vertical-align: middle;"></td>
+                <td style="padding: 10px;"><strong>Мастер кисти Шео</strong></td>
+                <td style="padding: 10px;">5.2/10</td>
+                <td style="padding: 10px;">Капли, длинный выпад кистью, прыжки с каплями</td>
+                <td style="padding: 10px;">У Шео есть подсказка в игре какой цвет он будет использовать для атаки, если он атакует красным цветом то нужно немного отойти от точки падения Шео и начать бить, когда цвет краски желтый то прыгай как можно выше чтобы не попасть под удар, когда цвет фиолетовый то отойи Шео и внимательно смотри чтобы капли не попали на тебя, синий удар по тактике анологичен фиолетевой</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><img src="{{ url_for('static', filename="image/sisters.png") }}" height="50" style="margin-right: 10px; vertical-align: middle;"></td>
+                <td style="padding: 10px;"><strong></strong>Лорды богомолов</td>
+                <td style="padding: 10px;">6.2/10</td>
+                <td style="padding: 10px;">Быстрые атаки с рывками, лезвии, численность</td>
+                <td style="padding: 10px;">Битва с первой сестрой не будет так сложной как в двумя, когда двое приходят нужно уже играть очень аккуратно так как они двигаются довольно быстро, когда кидают лезвии двоем можно отойи немного и подпрыгнуть через лезвия чтобы не получить урона, когда одна из сестер стоит сзади то можно уже начать бить, этом будь готов к второй сестре</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><img src="{{ url_for('static', filename="image/nosk.png") }}" height="50" style="margin-right: 10px; vertical-align: middle;"></td>
+                <td style="padding: 10px;"><strong>Носк</strong></td>
+                <td style="padding: 10px;">6/10</td>
+                <td style="padding: 10px;">Прыжки, слизи, быстро несется к рыцарю</td>
+                <td style="padding: 10px;">Во время того когда носк несется к рыцарю там возле центра есть место чтобы спрятаться, там можно ждать пока носк пройдет и атаковать, также когда он начинает слизи кыдать с верху лучше пройти по всей поле боя чтобы капля не коснулся</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="margin-top: 20px;">
     Пантеон Художника является легким пантеоном, игрок может не волноваться и спокойно пройти пантеон, но при этои внимательно играть чтобы случайно не погибнуть от босса.
     </p>
 

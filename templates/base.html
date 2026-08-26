@@ -23,10 +23,10 @@
     </main>
     
     <nav class="navigation-links">
-        <a href="#top">Наверх</a>
         {% if request.path != '/' %}
             <a href="{{ url_for('index') }}">Назад</a>
         {% endif %}
+        <a href="#top">Наверх</a>
     </nav>
     
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> 
