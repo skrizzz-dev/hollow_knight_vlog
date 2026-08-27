@@ -30,5 +30,9 @@ def post4():
 def post5():
     return render_template("post5.html")
 
+@app.route("/comparison")
+def comparison():
+    return render_template("comparison.html")
+
 if __name__ == '__main__':
     app.run(debug=True)

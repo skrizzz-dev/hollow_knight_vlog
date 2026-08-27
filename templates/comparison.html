@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}Сравнение пантеонов{% endblock %}
+
+{% block content %}
+    <h1>Сравнение пантеонов</h1>
+
+    <p>Каждый пантеон уникален своими боссами и сложностями, но далеко не каждый пантеон сможет реально быть челленджом для игрока, поэтому разработчики игры сделали каждый пантеон разными по уровню сложности</p>
+
+    <p>В этом таблица можно понять в чем разница между пантеонов</p>
+
+    <h2 style="margin-top: 40px;">Сравнительная таблица пантеонов</h2>
+
+    <table style="border-collapse: collapse; width: 100%; margin-top: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1e1e1e; color: #e0e0e0; border: 1px solid #333; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+        <thead>
+            <tr style="background-color: #333; color: #fff;">
+                <th style="text-align: left; padding: 10px;">Пантеон</th>
+                <th style="text-align: left; padding: 10px;">Название</th>
+                <th style="text-align: left; padding: 10px;">Сложность прохождения (из 10)</th>
+                <th style="text-align: left; padding: 10px;">Время прохождения</th>
+                <th style="text-align: left; padding: 10px;">Кол-во боссов</th>
+                <th style="text-align: left; padding: 10px;">Процент прохождения игроков</th>
+        </thead>
+        <tbody>
+            <tr style="border-bottom: 1px solid #2d2d2d;">
+                <td style="padding: 10px;"><img src="{{ url_for('static', filename="image/pantheon_5.jpg") }}" height="50" style="margin-right: 10px; vertical-align: middle;"></td>
+                <td style="padding: 10px; color: #6776ff">Пантеон халоунеста</td>
+                <td style="padding: 10px; color: #d80000">10</td>
+                <td style="padding: 10px;">35-50 мин</td>
+                <td style="padding: 10px;">42</td>
+                <td style="padding: 10px; color: #ff3730">~4.6%</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #2d2d2d;">
+                <td style="padding: 10px;"><img src="{{ url_for('static', filename="image/pantheon_4.jpg") }}" height="50" style="margin-right: 10px; vertical-align: middle;"></td>
+                <td style="padding: 10px; color: #6776ff">Пантеон рыцаря</td>
+                <td style="padding: 10px; color: #fd6804">8.8</td>
+                <td style="padding: 10px;">10-15 мин</td>
+                <td style="padding: 10px;">10</td>
+                <td style="padding: 10px; color: #f58c2b">~8.8%</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #2d2d2d;">
+                <td style="padding: 10px;"><img src="{{ url_for('static', filename="image/guru.jpg") }}" height="50" style="margin-right: 10px; vertical-align: middle;"></td>
+                <td style="padding: 10px; color: #6776ff">Пантеон гуру</td>
+                <td style="padding: 10px; color: #cead1d">7</td>
+                <td style="padding: 10px;">8-14 мин</td>
+                <td style="padding: 10px;">10</td>
+                <td style="padding: 10px; color: #ffbe0c">~10.1%</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #2d2d2d;">
+                <td style="padding: 10px;"><img src="{{ url_for('static', filename="image/pantheon_artist.jpg") }}" height="50" style="margin-right: 10px; vertical-align: middle;"></td>
+                <td style="padding: 10px; color: #6776ff">Пантеон художника</td>
+                <td style="padding: 10px; color: #caff4f">5.5</td>
+                <td style="padding: 10px;">8-13 мин</td>
+                <td style="padding: 10px;">10</td>
+                <td style="padding: 10px; color: #f8cb00">~13.1%</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #2d2d2d;">
+                <td style="padding: 10px;"><img src="{{ url_for('static', filename="image/pantheon_master.jpg") }}" height="50" style="margin-right: 10px; vertical-align: middle;"></td>
+                <td style="padding: 10px; color: #6776ff">Пантеон мастера</td>
+                <td style="padding: 10px; color: #32ce1d">5</td>
+                <td style="padding: 10px;">7-12 мин</td>
+                <td style="padding: 10px;">10</td>
+                <td style="padding: 10px; color: #f0ff67">~17.5%</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
